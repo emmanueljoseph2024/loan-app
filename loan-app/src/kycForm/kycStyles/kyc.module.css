@@ -1,0 +1,153 @@
+/* Form Container */
+.kycForm {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Header */
+.formHeader {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+/* Inputs & Selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+input[type="file"]:focus {
+  border-color: #1DCF9F;
+  outline: none;
+}
+
+/* Labels */
+label {
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Checkbox labels */
+label input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: #1DCF9F;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #17b788; /* Slightly darker green on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .kycForm {
+    padding: 20px;
+  }
+
+  .formHeader {
+    font-size: 1.4rem;
+  }
+
+  .section h3 {
+    font-size: 1.1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+
+  select,
+  input[type="file"] {
+    font-size: 0.95rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+  }
+}
+
+input[type='checkbox']{
+    width:30px; height:30px;
+}
+
+.link{
+    color:#000000; 
+}
+
+.error{
+    position:fixed; top:50px; right:50px; color:red; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); padding:10px;
+}
+
+.alreadyFilled{
+font-size:20px; font-weight: 300; text-align: center; color:#158b68;
+}
+
+.alreadyFilled Link{
+  color:#000000;
+}
+
+.homepageLink{
+  color:#444;
+}
+
+@media(max-width:600px){
+  .alreadyFilled{
+    font-size:16px;
+  }
+}

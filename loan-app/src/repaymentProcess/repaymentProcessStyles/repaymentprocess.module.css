@@ -1,0 +1,36 @@
+.repaymentContainer{
+ width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.repaymentHeader{
+  font-size: 2rem; /* Clear section hierarchy */
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  margin-top: 40px;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+.repaymentContent{
+  font-size: 1rem;
+  line-height: 1.8; /* Comfortable reading */
+  color: #444;
+  margin-bottom: 24px;
+  max-width: 900px;
+  text-align: justify;
+}
+
+/* Optional: improve readability on large screens */
+@media (max-width: 768px) {
+  .repaymentHeader {
+    font-size: 1.4rem;
+  }
+
+  .repaymentContent {
+    font-size: 1.05rem;
+  }
+}
